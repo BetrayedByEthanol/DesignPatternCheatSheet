@@ -4,12 +4,12 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Strategy
 {
-    public class StrategyExcample
+    public class StrategyExample
     {
         private ICreateStrategy createStrategy;
         private ILoadStrategy loadStrategy;
         private ISaveStrategy saveStrategy;
-        public StrategyExcample(ICreateStrategy cs, ILoadStrategy ls, ISaveStrategy ss)
+        public StrategyExample(ICreateStrategy cs, ILoadStrategy ls, ISaveStrategy ss)
         {
             createStrategy = cs;
             loadStrategy = ls;

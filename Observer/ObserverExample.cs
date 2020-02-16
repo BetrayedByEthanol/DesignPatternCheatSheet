@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Observer
 {
-    public class ObserverExcample
+    public class ObserverExample
     {
         public void test()
         {

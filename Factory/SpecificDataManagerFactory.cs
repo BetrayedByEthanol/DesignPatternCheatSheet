@@ -4,20 +4,20 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Factory
 {
-    public class FactoryExcample
+    public class SpecificDataManagerFactory : IDataManagerFactory
     {
-        public IDataManager getDataManager(EDataManagerTypes type)
+        public IDataManager getDataManager(string type)
         {
-            switch (type) 
+            switch (type)
             {
-                case (EDataManagerTypes.noSQL):
+                case "noSQL":
                     return new noSQLDataManager();
-                case EDataManagerTypes.SQL:
+                case "SQL":
                     return new SQLDataManager();
-                case EDataManagerTypes.Textfile:
+                case "Textfile":
                     return new TextfileDataManager();
                 default:
-                    throw new MissingMemberException();
+                    throw new NotSupportedException();
             }
         }
     }
