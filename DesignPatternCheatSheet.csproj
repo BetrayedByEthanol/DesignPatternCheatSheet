@@ -6,8 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Factory\" />
-    <Folder Include="Strategy\" />
+    <Folder Include="Adapter\" />
+    <Folder Include="Facade\" />
+    <Folder Include="Chain\" />
+    <Folder Include="Bridge\" />
+    <Folder Include="Composite\" />
+    <Folder Include="Decorator\" />
+    <Folder Include="Builder\" />
+    <Folder Include="Flyweight\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Proxy\" />
+    <Folder Include="Template\" />
   </ItemGroup>
 
 </Project>

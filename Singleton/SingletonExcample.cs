@@ -18,6 +18,23 @@ namespace DesignPatternCheatSheet.Singleton
 
         }
 
+        public static SingletonExcample createInstance(string param)
+        {
+            if(instance == null) instance = new SingletonExcample(param);
+            return instance;
+        }
+
+        public static SingletonExcample createInstance(int param)
+        {
+            if (instance == null) instance = new SingletonExcample(param);
+            return instance;
+        }
+
+        public static void disposeInstance()
+        {
+            instance = null;
+        }
+
         public static SingletonExcample getInstance()
         {
             return instance;
