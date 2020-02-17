@@ -1,34 +1,18 @@
-﻿using System;
+﻿using DesignPatternCheatSheet.Strategy;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPatternCheatSheet.Strategy
+namespace DesignPatternCheatSheet.BehavioralPatterns.Strategy
 {
     public class StrategyExample
     {
-        private ICreateStrategy createStrategy;
-        private ILoadStrategy loadStrategy;
-        private ISaveStrategy saveStrategy;
-        public StrategyExample(ICreateStrategy cs, ILoadStrategy ls, ISaveStrategy ss)
+        public void test()
         {
-            createStrategy = cs;
-            loadStrategy = ls;
-            saveStrategy = ss;
-        }
-
-        public void create(string data)
-        {
-            createStrategy.create(data);
-        }
-
-        public string load()
-        {
-            return loadStrategy.loadData();
-        }
-
-        public void save(string data)
-        {
-            saveStrategy.save(data);
+            DataManager dataManagerSQLToNoSQL = new DataManager(new CreatenoSQLEntry(), new LoadSQLEntry(), new SaveNoSQLEntry());
+            DataManager dataManagerTextToNoSQL = new DataManager(new CreatenoSQLEntry(), new LoadTextfileData(), new SaveNoSQLEntry());
+            dataManagerSQLToNoSQL.save(dataManagerSQLToNoSQL.load());
+            dataManagerTextToNoSQL.create(dataManagerTextToNoSQL.load());
         }
     }
 }
