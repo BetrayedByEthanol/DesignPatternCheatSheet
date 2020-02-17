@@ -4,9 +4,8 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Factory
 {
-    public interface IDataManager
+    public interface ITextFieldComponent
     {
-        public void saveData();
-        public void loadData();
+        public void getText(string text);
     }
 }

@@ -4,10 +4,8 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Factory
 {
-    public enum EDataManagerTypes
+    public interface ITextboxComponent
     {
-            noSQL,
-            SQL,
-            Textfile
+        public string readText();
     }
 }

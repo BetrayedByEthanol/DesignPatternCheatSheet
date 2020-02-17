@@ -4,8 +4,8 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Factory
 {
-    public interface IDataManagerFactory
+    public interface IButtonComponent
     {
-        public IDataManager getDataManager(string param);
+        public void doSomething();
     }
 }

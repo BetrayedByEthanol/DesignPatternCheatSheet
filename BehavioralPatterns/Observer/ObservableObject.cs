@@ -6,7 +6,7 @@ namespace DesignPatternCheatSheet.Observer
 {
     public class ObservableObject : IObservable
     {
-        public string state { get; private set; }
+        public string state { get { return state; } private set { state = value; notify(); } }
         public List<IObserver> observers { get; set; }
 
         public ObservableObject()
