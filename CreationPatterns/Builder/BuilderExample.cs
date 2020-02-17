@@ -8,7 +8,7 @@ namespace DesignPatternCheatSheet.Builder
     {
         public void test()
         {
-            IndividuellesEvent individuellesEvent = new IndividuellesEvent();
+            IEventBooking individuellesEvent = new IndividuellesEvent();
             Notification notification = new NotificationBuilder().buildNotification(individuellesEvent);
             notification.notify();
         }

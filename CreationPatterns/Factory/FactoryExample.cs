@@ -18,6 +18,14 @@ namespace DesignPatternCheatSheet.Factory
             ITextFieldComponent lightTextField = lightFactory.getTextField();
             ITextFieldComponent darkTextField = darkFactory.getTextField();
 
+            lightButton.action = new Action(someAction);
+            
+
+        }
+
+        public void someAction()
+        {
+            Console.WriteLine("my action");
         }
     }
 }

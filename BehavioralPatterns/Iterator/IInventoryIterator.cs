@@ -4,11 +4,10 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Iterator
 {
-    public class IteratorExample
+    public interface IInventoryIterator<T>
     {
-        public void test() 
-        {
-            
-        }
+        bool hasNext();
+        void next();
+        T current();
     }
 }
