@@ -4,7 +4,11 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Proxy
 {
-    class ProxyExample
+    public class ProxyExample
     {
+        public void test()
+        {
+
+        }
     }
 }
