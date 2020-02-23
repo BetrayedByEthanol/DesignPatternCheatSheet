@@ -4,7 +4,14 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Repository
 {
-    class RepositoryExample
+    public class RepositoryExample
     {
+        public void test()
+        {
+            UnitOfWork unit = new UnitOfWork("dbContext");
+            Console.WriteLine(unit.quotes.getQuote());
+            unit.save();
+            unit.Dispose();
+        }
     }
 }

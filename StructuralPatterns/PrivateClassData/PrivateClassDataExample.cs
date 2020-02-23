@@ -6,5 +6,6 @@ namespace DesignPatternCheatSheet.StructuralPatterns.PrivateClassData
 {
     class PrivateClassDataExample
     {
+        // Kapselung von daten und den benutzenden methoden.
     }
 }
