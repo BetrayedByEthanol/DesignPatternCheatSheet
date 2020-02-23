@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatternCheatSheet.Prototype;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -52,6 +53,9 @@ namespace DesignPatternCheatSheet
             Console.WriteLine("Function result: " + res);
 
             Console.WriteLine("method returns: " + methodAsPara(res, randomName => { return randomName * 2; }));
+
+            PrototypeExample example = new PrototypeExample();
+            example.test();
 
         }
 
