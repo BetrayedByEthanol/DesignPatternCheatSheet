@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Repository
 {
-    public class AuthorRepository : Repository<string>, IAuthorRepository
+    public class AuthorCollection : Repository<string>, IAuthorCollection
     {
-        public AuthorRepository(string db) : base(db) { }
+        public AuthorCollection(string db) : base(db) { }
     public string getAuthor()
         {
             return "random author";

@@ -6,8 +6,8 @@ namespace DesignPatternCheatSheet.Repository
 {
     public interface IUnitOfWork : IDisposable
     {
-        IAuthorRepository authors { get; }
-        IQuoteRepository quotes { get; }
+        IAuthorCollection authors { get; }
+        IQuoteCollection quotes { get; }
         public void save();
     }
 }

@@ -4,8 +4,8 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Repository
 {
-    public interface IAuthorRepository
+    public interface IQuoteCollection : IRepository<string>
     {
-        string getAuthor();
+        string getQuote();
     }
 }

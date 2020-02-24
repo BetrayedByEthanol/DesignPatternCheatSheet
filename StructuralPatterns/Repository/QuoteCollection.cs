@@ -5,9 +5,9 @@ using System.Text;
 
 namespace DesignPatternCheatSheet.Repository
 {
-    public class QuoteRepository : Repository<string>, IQuoteRepository
+    public class QuoteCollection : Repository<string>, IQuoteCollection
     {
-        public QuoteRepository(string db) : base(db) { }
+        public QuoteCollection(string db) : base(db) { }
         public string getQuote()
         {
             return "get a random quote";
