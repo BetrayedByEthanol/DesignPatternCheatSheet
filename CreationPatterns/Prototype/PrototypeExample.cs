@@ -25,7 +25,7 @@ namespace DesignPatternCheatSheet.Prototype
             Console.WriteLine("Original Address " + original.data.street + " in the " + original.data.city);
             Console.WriteLine("Shallow Address " + shallowCopy.data.street + " in the " + shallowCopy.data.city);
             Console.WriteLine("Deep Address " + deepCopy.data.street + " in the " + deepCopy.data.city);
-            Console.WriteLine("chaning deep");
+            Console.WriteLine("changing deep");
             deepCopy.data.city = "garbage";
             Console.WriteLine("Original Address " + original.data.street + " in the " + original.data.city);
             Console.WriteLine("Shallow Address " + shallowCopy.data.street + " in the " + shallowCopy.data.city);
