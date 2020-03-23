@@ -1,4 +1,5 @@
 ﻿using DesignPatternCheatSheet.Chain;
+using DesignPatternCheatSheet.Memento;
 using DesignPatternCheatSheet.State;
 using System;
 using System.Collections.Generic;
@@ -55,7 +56,7 @@ namespace DesignPatternCheatSheet
 
             Console.WriteLine("method returns: " + methodAsPara(res, randomName => { return randomName * 2; }));
 
-            ChainExample example = new ChainExample();
+            MementoExample example = new MementoExample();
             example.test();
         }
 
@@ -91,7 +92,7 @@ namespace DesignPatternCheatSheet
         {
             if (s != null)
             {
-                return s + "world";
+                return s + "world";  
             }
             else
             {
@@ -105,7 +106,7 @@ namespace DesignPatternCheatSheet
             return s;
         }
         public static string swtichShort(string s)
-        {
+        { 
             return s switch
             {
                 "hello" => "string was hello",
